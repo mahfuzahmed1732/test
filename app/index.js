@@ -5,5 +5,9 @@ app.get('/', (req, res) => {
   res.status(200).send("my first nodejs project deploy on Vercel");
 });
 
+app.get('/contact', (req, res) => {
+  res.status(200).send("my contact page ....");
+});
+
 // Export app instead of listen
 module.exports = app;
